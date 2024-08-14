@@ -1,11 +1,11 @@
 import axios from "axios"
-import { API_URL } from "./api"
+
 
 const apiInstanse = axios.create({
-    baseURL:API_URL,
+    baseURL:process.env.API_URL,
     headers:{
         'Content-Type':'application/json',
-        'apikey':
+        'apikey':process.env.API_KEY
     }
 })
 export default apiInstanse
