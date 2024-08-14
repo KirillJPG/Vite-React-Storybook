@@ -1,6 +1,0 @@
-
-class NewsService{
-    getNews(){
-        
-    }
-}

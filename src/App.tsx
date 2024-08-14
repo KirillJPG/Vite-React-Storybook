@@ -1,11 +1,13 @@
-import { Timer } from "./components/ui/Timer/Timer"
+import { useNews } from "./hooks/useNews"
 import "./style.css"
-function App() {
 
+function App() {
+  const {data} = useNews()
+  console.log(import.meta.env.VITE_API_URL)
   return (
-    <>
-      
-    </>
+    <div className="">
+
+    </div>
   )
 }
 
