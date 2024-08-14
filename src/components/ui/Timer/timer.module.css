@@ -9,14 +9,9 @@
     overflow: hidden;
 }
 .circle{
-    stroke: black;
-    stroke-width: 4px;
     transition: 1s;
 }
-.bgcircle{
-    stroke: gainsboro;
-    stroke-width: 4px;
-}
+
 
 .timer{
     color: black;
