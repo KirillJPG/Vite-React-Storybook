@@ -1,0 +1,13 @@
+.loading{
+    animation: load infinite linear .5s;
+    border-radius: 5px;
+    rotate: 0deg;
+}
+@keyframes load {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
