@@ -1,8 +1,12 @@
+import { useActions } from "../../hooks/useAction"
+import { useTypeSelector } from "../../hooks/useTypeDispatch"
+
 import style from "./Menu.module.css"
-import { useMapStore } from "./store"
 
 export function Menu(){
-    const {zoom,setZoom} = useMapStore()
+    const {zoom} = useTypeSelector(state=>state.mapReduser)
+    const {setZoom} = useActions()
+
     const onClick = (addZoom:number) =>{
         if(zoom+addZoom>0 && zoom+addZoom < 2.25){
             setZoom(zoom+addZoom)
