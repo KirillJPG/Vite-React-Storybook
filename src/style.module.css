@@ -1,0 +1,20 @@
+*{
+    font-family: "Montserrat", sans-serif;  
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.mapContainer{
+    overflow: hidden;
+    max-height: 100vh;
+}
+.layout{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 4fr 1fr;
+    position: relative;
+}
+*{
+    user-select: none;
+}
